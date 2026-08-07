@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Noto_Music, Inter } from "next/font/google";
 import "./globals.css";
 
-const serifFont = Cormorant_Garamond({
+const serifFont = Noto_Music({
   variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: "400",
   display: "swap",
 });
 
@@ -19,6 +18,9 @@ export const metadata: Metadata = {
   title: "Micaela Bianchi",
   description:
     "Portfolio de Micaela Bianchi. Trabajos fotográficos y audiovisuales.",
+  icons: {
+    icon: "/image.ico",
+  },
   keywords: [
     "Fotografia",
     "Micaela Bianchi",

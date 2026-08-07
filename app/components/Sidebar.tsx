@@ -80,12 +80,12 @@ export default function Sidebar({
               <div className="pt-2">
                 <button
                   onClick={() => handleNav("works")}
-                  className={`block w-full text-left font-mono text-xs uppercase tracking-widest transition-colors mb-2 ${currentView === "works"
+                  className={`block w-full text-left transition-colors mb-2 ${currentView === "works"
                     ? "text-neutral-950 font-semibold"
-                    : "text-neutral-400 hover:text-neutral-900"
+                    : "text-neutral-500 hover:text-neutral-900"
                     }`}
                 >
-                  proyectos
+                  Proyectos
                 </button>
 
                 <div className="pl-3 space-y-2 border-l border-neutral-200">
@@ -149,12 +149,12 @@ export default function Sidebar({
           <div className="space-y-3 pt-2">
             <button
               onClick={() => handleNav("works")}
-              className={`block w-full text-left font-mono text-xs uppercase tracking-widest transition-colors ${currentView === "works"
+              className={`block w-full text-left transition-colors ${currentView === "works"
                 ? "text-neutral-950 font-semibold"
-                : "text-neutral-400 hover:text-neutral-900"
+                : "text-neutral-500 hover:text-neutral-900"
                 }`}
             >
-              proyectos
+              Proyectos
             </button>
 
             <div className="space-y-2.5 pl-1">

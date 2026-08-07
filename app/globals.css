@@ -24,7 +24,7 @@ body {
 }
 
 .font-serif {
-  font-family: var(--font-serif), Cormorant Garamond, Playfair Display, serif;
+  font-family: var(--font-serif), "Noto Music", Georgia, serif;
 }
 
 /* Custom scrollbar for minimalist feel */
