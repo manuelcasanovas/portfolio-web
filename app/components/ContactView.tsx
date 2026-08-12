@@ -4,7 +4,7 @@ export default function ContactView() {
   return (
     <article className="max-w-xl space-y-8 py-4">
       <header className="space-y-2">
-        <h2 className="font-serif text-3xl font-normal text-neutral-900">
+        <h2 className="font-serif text-2xl font-normal text-neutral-900">
           Contacto
         </h2>
       </header>

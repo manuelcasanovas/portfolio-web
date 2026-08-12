@@ -11,7 +11,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <article className="space-y-8 max-w-4xl mx-auto py-4">
       <header className="text-center space-y-4 max-w-2xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-4xl font-normal uppercase tracking-wider text-neutral-900">
+        <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-wider text-neutral-900">
           {project.title}
         </h2>
         <p className="text-xs md:text-sm text-neutral-600 font-light leading-relaxed">

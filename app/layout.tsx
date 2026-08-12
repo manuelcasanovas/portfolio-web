@@ -17,7 +17,7 @@ const sansFont = Inter({
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
-  weight: ["400"],
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: { children: React.ReactNode; }) {
   return (
-    <html lang="es" className={`${latoFont.variable} ${sansFont.variable} h-full antialiased`} >
+    <html lang="es" className={`${latoFont.variable} ${sansFont.variable} ${montserrat.variable} h-full antialiased`} >
       <body className="min-h-full bg-[#FBFBFB] text-neutral-900 font-sans selection:bg-neutral-900 selection:text-white">
         {children}
       </body>
