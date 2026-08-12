@@ -10,11 +10,7 @@ interface SidebarProps {
   selectedProject: Project | null;
 }
 
-export default function Sidebar({
-  currentView,
-  onNavigate,
-  selectedProject,
-}: SidebarProps) {
+export default function Sidebar({ currentView, onNavigate, selectedProject }: SidebarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleNav = (view: string) => {

@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Noto_Music, Inter } from "next/font/google";
+import { Lato, Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const serifFont = Noto_Music({
-  variable: "--font-serif",
-  weight: "400",
+const latoFont = Lato({
+  variable: "--font-lato",
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
   display: "swap",
 });
 
 const sansFont = Inter({
   variable: "--font-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  weight: ["400"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -30,16 +38,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Micaela Bianchi" }],
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children, }: { children: React.ReactNode; }) {
   return (
-    <html
-      lang="es"
-      className={`${serifFont.variable} ${sansFont.variable} h-full antialiased`}
-    >
+    <html lang="es" className={`${latoFont.variable} ${sansFont.variable} h-full antialiased`} >
       <body className="min-h-full bg-[#FBFBFB] text-neutral-900 font-sans selection:bg-neutral-900 selection:text-white">
         {children}
       </body>

@@ -11,7 +11,7 @@ import { PROJECTS } from "./data/projects";
 export default function Home() {
   const [currentView, setCurrentView] = useState<string>("works");
 
-  const selectedProject = PROJECTS.find((p) => p.id === currentView) || null;
+  const selectedProject = PROJECTS.find((p) => p.id === currentView) || null; //todos los proyectos hardcodeados
 
   return (
     <div className="min-h-screen bg-[#FBFBFB] text-neutral-900 flex flex-col md:flex-row">
@@ -25,13 +25,13 @@ export default function Home() {
         {currentView === "works" && (
           <ProjectGrid
             projects={PROJECTS}
-            onSelectProject={(projectId) => setCurrentView(projectId)}
+            onSelectProject={(projectId) => setCurrentView(projectId)} //callback
           />
         )}
 
         {currentView === "bio" && <AboutView />}
 
-        {(currentView === "contact" || currentView === "contacto") && <ContactView />}
+        {(currentView === "contact") && <ContactView />}
 
         {selectedProject && <ProjectDetail project={selectedProject} />}
       </main>
