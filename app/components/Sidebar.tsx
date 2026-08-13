@@ -81,7 +81,7 @@ export default function Sidebar({ currentView, onNavigate, selectedProject }: Si
                     : "text-neutral-500 hover:text-neutral-900"
                     }`}
                 >
-                  Proyectos
+                  Trabajos
                 </button>
 
                 <div className="pl-3 space-y-2 border-l border-neutral-200">

@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function AboutView() {
   return (
     <article className="max-w-2xl space-y-8 py-4">
@@ -17,13 +15,11 @@ export default function AboutView() {
         </p>
       </div>
 
-      <div className="relative w-full aspect-[4/3] overflow-hidden bg-neutral-100 mt-6">
-        <Image
+      <div className="w-full overflow-hidden mt-6">
+        <img
           src="/projects/image_bio.png"
           alt="Micaela Bianchi"
-          fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover"
+          className="w-full h-auto block object-contain"
         />
       </div>
     </article>
