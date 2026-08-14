@@ -19,6 +19,7 @@ export default function AboutView() {
         <img
           src="/projects/image_bio.png"
           alt="Micaela Bianchi"
+          decoding="async"
           className="w-full h-auto block object-contain"
         />
       </div>
